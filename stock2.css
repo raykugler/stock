@@ -1,0 +1,209 @@
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70px .1fr 1fr 60px 1fr 1fr 1fr 1fr;
+  height: 100vh;
+}
+.banner{
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  background-color: #c8b9cd;
+}
+.head{
+  grid-column: 1/2;
+  justify-self: right;
+  padding-right: 6px;
+  font-size: 25px;
+}
+#explanation{
+
+  grid-column: 3/4;
+
+}
+#examples{
+  grid-column: 4/10;
+  grid-row: 4/5;
+  display: grid;
+
+}
+.exbuttons{
+  background-color: #a9a6ac;
+   border: none;
+   color: white;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   text-decoration: none;
+   cursor: pointer;
+}
+#extable{
+
+grid-column: 1/-1;
+grid-row: 1/2;
+font-size: 12px;
+box-shadow: 0 -2px 0px 0 hsla(0, 0%, 50%, .40);
+}
+.excell{
+ text-align: center;
+border: 2px solid #887d8b;
+width: 15%;
+}
+
+.search{
+  padding-top: 10px;
+  grid-column: 2/3;
+
+
+}
+.closeprice{
+  font-size: 14px;
+}
+#btn{
+  grid-column: 5/6;
+  grid-row: 1/3;
+  width: 50%;
+  height: 50%;
+  border-radius: 5%;
+  align-self:center;
+  background-color: #c8b9cd;
+}
+.group{
+  grid-column: 1/4;
+  justify-content: right;
+  border-radius:6px 0px 0px 6px;
+}
+#wind {
+  width: 25em;
+  height: 48px;
+
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+#myform{
+  width: max-width;
+}
+#icon{
+  height: 40px;
+  position: relative;
+  left: 300px;
+  bottom: 40px;
+}
+.leftcell{
+  text-align: right;
+}
+#sdsent{
+  text-align: right;
+}
+.numbercell{
+  font-size: 20px;
+  text-align: center;
+}
+#spreadrange{
+  text-align: left;
+}
+#searchresults{
+  grid-row: 3/4;
+  grid-column: 3/11;
+}
+#stockchoices{
+  grid-column: 4/10;
+  grid-row: 5/6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#choiceTable{
+  border-top: 4px solid #c8b9cd;
+  grid-column: 1/8;
+  grid-row: 1/3;
+  font-size: 20px;
+  box-shadow: 0 -2px 0px 0 hsla(0, 0%, 50%, .40);
+
+}
+#buttonCell{
+  text-align: center;
+}
+#firstcompany{
+  font-size: 14px;
+}
+#deviationcell{
+  text-align: left;
+}
+#secondcompany{
+  font-size: 14px;
+}
+#firstspot{
+  text-align: center;
+}
+#secondspot{
+  text-align: center;
+}
+#instructions{
+  grid-column: 4/10;
+  grid-row: 5/7;
+  display: grid;
+
+}
+#instructiontable{
+    display: none;
+}
+.gaprow{
+  height: 10px;
+}
+#firststock{
+  text-align: right;
+
+}
+#secondstock{
+  text-align: right;
+}
+.rightcells{
+  width: 20%;
+  height: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+.cell {
+  width: 35%;
+height: 30%;
+
+}
+.cell2{
+  height: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  justify-self:center;
+}
+.sentencecell{
+  text-align: center;
+}
+.colorrowsone{
+  background-color: #c8b9cd;
+}
+/* */
+/*.search input { text-indent: 32px;}
+.search .fa-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/*---------------------------
+* { box-sizing:border-box; }
+
+/* basic stylings ------------------------------------------ */
+/* form starting stylings ------------------------------- */
+/*.group 			  {
+  position:relative;
+  margin-bottom:45px;
+}
+*/

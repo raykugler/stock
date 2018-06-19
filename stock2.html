@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Arbitrage</title>
+<link rel="stylesheet" href="stock2.css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="container box">
+
+  <div class="banner box">
+    <h2 class="head">Arbitrage: Pairs Trading:    </h2>
+
+<div class="search">
+
+<form id="myform">
+    <input type="text" id="wind" >
+
+</form>
+<input type="image" id="icon" src="ic_search_black_48dp.png" onclick="search()">
+</div>
+
+      </div>
+
+
+    <div id="searchresults">
+      <div id="instructions">
+        <table id="instructiontable">
+          <tr >
+            <td class="leftcell">The average spread is </td>
+<td id="meanspread" class="numbercell"> </td>
+            <td id="sdsent">The standard deviation from this spread is</td>
+            <td id="deviationcell" class="numbercell"></td>
+          </tr>
+          <tr>
+            <td class="leftcell">When the spread goes above</td>
+            <td id="highspread" class="numbercell">      </td>
+            <td colspan="2">purchase the lower priced stock and short the higher priced stock</td>
+            <td>            </td>
+          </tr>
+          <tr>
+            <td class="leftcell">When the spread drops below</td>
+            <td id="lowspread" class="numbercell" >      </td>
+            <td colspan="2">purchase the higher priced stock and short the lower priced stock</td>
+            <td>            </td>
+          </tr>
+          <tr class="gaprow">          </tr>
+          <tr>
+            <td>            </td>
+            <td class="leftcell" colspan="2">Close out your positions when the spread falls back to to within </td>
+            <td id="spreadrange" class="numbercell"> </td>
+            <td>            </td>
+
+          </tr>
+        </table>
+
+      </div>
+  </div>
+  <div id="examples">
+  <table id="extable">
+    <tr>
+      <td class="excell">
+      <button action="/stock.js" id="" class="exbuttons"  type="submit"> <br>Examples <br></button>
+      </td>
+      <td class="excell" id="ford">
+        <button action="/stock.js" id="delta" class="exbuttons" onclick="delta()" type="submit">
+        Southwest <br> and <br> Delta </button>
+      </td>
+      <td class="excell" id="lowes">
+          <button action="/stock.js" id="lowesbt" class="exbuttons" onclick="lowes()" type="submit">HomeDepot <br> and <br> Lowes</button>
+      </td>
+      <td class="excell" id="apple">
+        <button action="/stock.js" id="applebt" class="exbuttons" onclick="apple()" type="submit">Microsoft <br> and <br> Apple</button>
+      </td>
+      <td class="excell" id="walmart">
+        <button action="/stock.js" id="walbt" class="exbuttons" onclick="walmart()" type="submit">Walmart <br> and <br> Target</button>
+      </td>
+      <td class="excell" id="ford">
+      <button action="/stock.js" id="fordbt" class="exbuttons" onclick="ford()" type="submit">  Ford <br> and <br> GM</button>
+      </td>
+    </tr>
+  </table></div>
+<div id="stockchoices">
+  <table id="choiceTable">
+    <tr>
+      <td id="firststock" class="cell"> STOCK 1:     </td>
+      <td id="firstspot" class="cell" >      </td>
+        <td id="firstcompany" class="cell2" colspan="2">       </td>
+<td id="currentpriceone" class="closeprice"></td>
+    </tr>
+
+    <tr>
+      <td id="secondstock" class="cell">STOCK 2:      </td>
+      <td id="secondspot"  class="cell">      </td>
+<td id="secondcompany" class="cell2" colspan="2">      </td>
+<td id="currentpricertwo" class="closeprice"></td>
+    </tr>
+
+    <tr>
+      <td colspan="5" id="buttonCell">
+
+
+<button action="/stock.js" id="btn" onclick="compare()" type="submit" >COMPARE</button>
+      </td>
+    </tr>
+
+  </table>
+
+</div>
+
+
+</div>
+    <script src="secondstockjs.js"></script>
+</body>
+</html>
